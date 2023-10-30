@@ -106,14 +106,19 @@ public class LoginForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void LoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButtonActionPerformed
+
  String userText = UsernameField.getText();
-        String pwdText = PasswordField.getText();
-        if (userText.equals("admin") && pwdText.equals("admin123")) {
+ String pwdText = PasswordField.getText();
+       
+ if (userText.equals("admin") && pwdText.equals("admin123")) 
+{
             
-            System.out.println("Login successful");
-        } else {
-            System.out.println("Invalid Login Credentials");
-        }
+ System.out.println("Login successful");
+} 
+else 
+{
+System.out.println("Invalid Login Credentials");
+}
         
         
     }//GEN-LAST:event_LoginButtonActionPerformed
